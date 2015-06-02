@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/Res">
+        <file>MBSD_icon.png</file>
+        <file>Images/arrow.png</file>
+        <file>Images/arrow_down.png</file>
+        <file>Images/arrow2.jpg</file>
+    </qresource>
+</RCC>

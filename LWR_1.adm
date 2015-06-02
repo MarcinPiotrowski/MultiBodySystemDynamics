@@ -1,0 +1,437 @@
+ADAMS/View model name: LWR_1
+!
+!-------------------------------- SYSTEM UNITS ---------------------------------
+!
+UNITS/
+, FORCE = NEWTON
+, MASS = KILOGRAM
+, LENGTH = METER
+, TIME = SECOND
+!
+!----------------------------------- PARTS -------------------------------------
+!
+!----------------------------------- Ground ------------------------------------
+!
+!                            adams_view_name='ground'
+PART/1
+, GROUND
+!
+!                           adams_view_name='MARKER_1'
+MARKER/1
+, PART = 1
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                           adams_view_name='MARKER_4'
+MARKER/4
+, PART = 1
+, QP = 0, 0.157, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='MARKER_10'
+MARKER/10
+, PART = 1
+, QP = 0, 1.139, 0
+!
+!                          adams_view_name='MARKER_19'
+MARKER/19
+, PART = 1
+, QP = 0, 1.2299, 0.0607
+!
+!                          adams_view_name='MARKER_26'
+MARKER/26
+, PART = 1
+, QP = 0, 1.2749, 7.0E-004
+!
+!                          adams_view_name='MARKER_27'
+MARKER/27
+, PART = 1
+, QP = 0, 1.139, 0.0607
+!
+!                          adams_view_name='CYLINDER_1'
+GRAPHICS/1
+, CYLINDER
+, CM = 1
+, LENGTH = 0.157
+, RADIUS = 0.0375
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_2'
+PART/2
+, MASS = 4.137936421
+, CM = 8
+, IP = 0.0125024031, 0.0125024031, 0.0019089141
+!
+!                           adams_view_name='MARKER_2'
+MARKER/2
+, PART = 2
+, QP = 0, 0.157, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                           adams_view_name='MARKER_5'
+MARKER/5
+, PART = 2
+, QP = 0, 0.157, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                           adams_view_name='MARKER_6'
+MARKER/6
+, PART = 2
+, QP = 0, 0.34, 0
+!
+!                              adams_view_name='cm'
+MARKER/8
+, PART = 2
+, QP = -9.338837558E-013, 0.2485, -4.66962195E-013
+, REULER = 0, 1.570796327, 0
+!
+!                          adams_view_name='CYLINDER_2'
+GRAPHICS/2
+, CYLINDER
+, CM = 2
+, LENGTH = 0.183
+, RADIUS = 0.030375
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_3'
+PART/3
+, MASS = 3.107252808
+, CM = 9
+, IP = 0.0093018688, 0.0093018688, 0.0010705457
+!
+!                           adams_view_name='MARKER_3'
+MARKER/3
+, PART = 3
+, QP = 0, 0.34, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                           adams_view_name='MARKER_7'
+MARKER/7
+, PART = 3
+, QP = 0, 0.34, 0
+!
+!                              adams_view_name='cm'
+MARKER/9
+, PART = 3
+, QP = -9.389869458E-013, 0.432, -4.69513901E-013
+, REULER = 0, 1.570796327, 0
+!
+!                          adams_view_name='MARKER_13'
+MARKER/13
+, PART = 3
+, QP = 0, 0.524, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='CYLINDER_3'
+GRAPHICS/3
+, CYLINDER
+, CM = 3
+, LENGTH = 0.184
+, RADIUS = 0.02625
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_4'
+PART/4
+, MASS = 3.832322069
+, CM = 17
+, IP = 0.0155263772, 0.0155263772, 0.0013904218
+!
+!                          adams_view_name='MARKER_11'
+MARKER/11
+, PART = 4
+, QP = 0, 0.524, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='MARKER_14'
+MARKER/14
+, PART = 4
+, QP = 0, 0.524, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='MARKER_15'
+MARKER/15
+, PART = 4
+, QP = 0, 0.7395, 0
+!
+!                              adams_view_name='cm'
+MARKER/17
+, PART = 4
+, QP = -1.099737428E-012, 0.63175, -5.498926395E-013
+, REULER = 0, 1.570796327, 0
+!
+!                          adams_view_name='CYLINDER_4'
+GRAPHICS/4
+, CYLINDER
+, CM = 11
+, LENGTH = 0.2155
+, RADIUS = 0.0269375
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_5'
+PART/5
+, MASS = 2.385468278
+, CM = 18
+, IP = 0.0070456793, 0.0070456793, 6.309563595E-004
+!
+!                          adams_view_name='MARKER_12'
+MARKER/12
+, PART = 5
+, QP = 0, 0.7395, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='MARKER_16'
+MARKER/16
+, PART = 5
+, QP = 0, 0.7395, 0
+!
+!                              adams_view_name='cm'
+MARKER/18
+, PART = 5
+, QP = -9.389869458E-013, 0.8315, -4.69513901E-013
+, REULER = 0, 1.570796327, 0
+!
+!                          adams_view_name='MARKER_22'
+MARKER/22
+, PART = 5
+, QP = 0, 0.9235, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='CYLINDER_5'
+GRAPHICS/5
+, CYLINDER
+, CM = 12
+, LENGTH = 0.184
+, RADIUS = 0.023
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_6'
+PART/6
+, MASS = 3.832322069
+, CM = 24
+, IP = 0.0155263772, 0.0155263772, 0.0013904218
+!
+!                          adams_view_name='MARKER_20'
+MARKER/20
+, PART = 6
+, QP = 0, 0.9235, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='MARKER_23'
+MARKER/23
+, PART = 6
+, QP = 0, 0.9235, 0
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                              adams_view_name='cm'
+MARKER/24
+, PART = 6
+, QP = -1.099737428E-012, 1.03125, -5.498926395E-013
+, REULER = 0, 1.570796327, 0
+!
+!                          adams_view_name='MARKER_31'
+MARKER/31
+, PART = 6
+, QP = 0, 1.139, 0.0607
+!
+!                          adams_view_name='CYLINDER_6'
+GRAPHICS/6
+, CYLINDER
+, CM = 20
+, LENGTH = 0.2155
+, RADIUS = 0.0269375
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_8'
+PART/8
+, MASS = 0.2876151948
+, CM = 34
+, IP = 2.073257167E-004, 2.073257167E-004, 1.856648209E-005
+!
+!                          adams_view_name='MARKER_29'
+MARKER/29
+, PART = 8
+, QP = 0, 1.139, 0.0607
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='MARKER_32'
+MARKER/32
+, PART = 8
+, QP = 0, 1.139, 0.0607
+!
+!                              adams_view_name='cm'
+MARKER/34
+, PART = 8
+, QP = -4.63879964E-013, 1.18445, 0.0607
+, REULER = 0, 1.570796327, 0
+!
+!                          adams_view_name='MARKER_36'
+MARKER/36
+, PART = 8
+, QP = 0, 1.2299, 7.0E-004
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='CYLINDER_8'
+GRAPHICS/8
+, CYLINDER
+, CM = 29
+, LENGTH = 0.0909
+, RADIUS = 0.0113625
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_9'
+PART/9
+, MASS = 0.0348945593
+, CM = 38
+, IP = 6.1644783E-006, 6.1644783E-006, 5.520428329E-007
+!
+!                          adams_view_name='MARKER_35'
+MARKER/35
+, PART = 9
+, QP = 0, 1.2299, 7.0E-004
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                          adams_view_name='MARKER_37'
+MARKER/37
+, PART = 9
+, QP = 0, 1.2299, 7.0E-004
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                              adams_view_name='cm'
+MARKER/38
+, PART = 9
+, QP = -2.296435465E-013, 1.2524, 6.999999999E-004
+, REULER = 0, 1.570796327, 0
+!
+!                         adams_view_name='CYLINDER_10'
+GRAPHICS/10
+, CYLINDER
+, CM = 35
+, LENGTH = 0.045
+, RADIUS = 0.005625
+!
+!-------------------------------- CONSTRAINTS ----------------------------------
+!
+!                           adams_view_name='JOINT_1'
+JOINT/1
+, REVOLUTE
+, I = 4
+, J = 5
+, IC = 2, 0.5
+!
+!                           adams_view_name='JOINT_2'
+JOINT/2
+, REVOLUTE
+, I = 6
+, J = 7
+, IC = -0.5, 0.4
+!
+!                           adams_view_name='JOINT_3'
+JOINT/3
+, REVOLUTE
+, I = 13
+, J = 14
+, IC = 1, -0.7
+!
+!                           adams_view_name='JOINT_4'
+JOINT/4
+, REVOLUTE
+, I = 15
+, J = 16
+, IC = -0.3, -1
+!
+!                           adams_view_name='JOINT_5'
+JOINT/5
+, REVOLUTE
+, I = 22
+, J = 23
+, IC = 2, 0.6
+!
+!                           adams_view_name='JOINT_6'
+JOINT/6
+, REVOLUTE
+, I = 31
+, J = 32
+, IC = -0.5, 0.9
+!
+!                           adams_view_name='JOINT_7'
+JOINT/7
+, REVOLUTE
+, I = 36
+, J = 37
+, IC = 0.8, 0.3
+!
+!------------------------------ DATA STRUCTURES --------------------------------
+!
+!                            adams_view_name='J0_qdd'
+VARIABLE/1
+, FUNCTION = WDTZ(4,5,5)
+!
+!                            adams_view_name='J0_qd'
+VARIABLE/2
+, FUNCTION = WZ(4,5,5)
+!
+!                            adams_view_name='J1_qdd'
+VARIABLE/3
+, FUNCTION = WDTZ(6,7,7)
+!
+!                            adams_view_name='J1_qd'
+VARIABLE/4
+, FUNCTION = WZ(6,7,7)
+!
+!                            adams_view_name='J2_qdd'
+VARIABLE/5
+, FUNCTION = WDTZ(13,14,14)
+!
+!                            adams_view_name='J2_qd'
+VARIABLE/6
+, FUNCTION = WZ(13,14,14)
+!
+!                            adams_view_name='J3_qdd'
+VARIABLE/7
+, FUNCTION = WDTZ(15,16,16)
+!
+!                            adams_view_name='J3_qd'
+VARIABLE/8
+, FUNCTION = WZ(15,16,16)
+!
+!                            adams_view_name='J4_qdd'
+VARIABLE/9
+, FUNCTION = WDTZ(22,23,23)
+!
+!                            adams_view_name='J4_qd'
+VARIABLE/10
+, FUNCTION = WZ(22,23,23)
+!
+!                            adams_view_name='J6_qdd'
+VARIABLE/11
+, FUNCTION = WDTZ(31,32,32)
+!
+!                            adams_view_name='J5_qd'
+VARIABLE/12
+, FUNCTION = WZ(31,32,32)
+!
+!------------------------- GRAVITATIONAL ACCELERATION --------------------------
+!
+ACCGRAV/
+, JGRAV = -9.80665
+!
+!----------------------------- ANALYSIS SETTINGS -------------------------------
+!
+INTEGRATOR/
+, GSTIFF
+, ERROR = 1.0E-010
+!
+OUTPUT/
+, REQSAVE
+, GRSAVE
+!
+RESULTS/
+, XRF
+!
+END

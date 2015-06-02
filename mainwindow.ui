@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1524</width>
+    <height>841</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Multibody System Dynamics</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="main_res.qrc">
+    <normaloff>:/Res/MBSD_icon.png</normaloff>:/Res/MBSD_icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="MultibodySystemInfoWidget" name="MultibodyObjectsWidget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="GRender" name="glWidget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="simulationwidget" name="SimulationWidget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1524</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionImport_ADAMS_model"/>
+    <addaction name="actionImport_ADAMS_Pre_simulated_model"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionGenerate_ADAMS_Measure_Command"/>
+    <addaction name="actionHaptic_Devices_Support"/>
+    <addaction name="actionOptions"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_MBSD"/>
+   </widget>
+   <widget class="QMenu" name="menuPlot">
+    <property name="title">
+     <string>Plot</string>
+    </property>
+    <addaction name="actionCreate_new_plot"/>
+   </widget>
+   <widget class="QMenu" name="menuAaaaaa">
+    <property name="title">
+     <string>aaaaaa</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuPlot"/>
+   <addaction name="menuAaaaaa"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOptions">
+   <property name="text">
+    <string>Options</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionImport_ADAMS_model">
+   <property name="text">
+    <string>Import ADAMS model</string>
+   </property>
+  </action>
+  <action name="actionImport_ADAMS_Pre_simulated_model">
+   <property name="text">
+    <string>Import ADAMS pre-simulated model</string>
+   </property>
+  </action>
+  <action name="actionGenerate_ADAMS_Measure_Command">
+   <property name="text">
+    <string>Generate ADAMS Measure Command</string>
+   </property>
+  </action>
+  <action name="actionAbout_MBSD">
+   <property name="text">
+    <string>About MBSD...</string>
+   </property>
+  </action>
+  <action name="actionHaptic_Devices_Support">
+   <property name="text">
+    <string>Haptic Devices Support</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As...</string>
+   </property>
+  </action>
+  <action name="actionCreate_new_plot">
+   <property name="text">
+    <string>Create new plot</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GRender</class>
+   <extends>QWidget</extends>
+   <header>grender.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>simulationwidget</class>
+   <extends>QWidget</extends>
+   <header>simulationwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MultibodySystemInfoWidget</class>
+   <extends>QWidget</extends>
+   <header>multibodysysteminfowidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="main_res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

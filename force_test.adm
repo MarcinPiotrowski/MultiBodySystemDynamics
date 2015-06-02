@@ -1,0 +1,191 @@
+ADAMS/View model name: force_test
+!
+!-------------------------------- SYSTEM UNITS ---------------------------------
+!
+UNITS/
+, FORCE = NEWTON
+, MASS = KILOGRAM
+, LENGTH = METER
+, TIME = SECOND
+!
+!----------------------------------- PARTS -------------------------------------
+!
+!----------------------------------- Ground ------------------------------------
+!
+!                            adams_view_name='ground'
+PART/1
+, GROUND
+!
+!                           adams_view_name='MARKER_1'
+MARKER/1
+, PART = 1
+, REULER = 3.141592654, 1.570796327, 3.141592654
+!
+!                           adams_view_name='MARKER_4'
+MARKER/4
+, PART = 1
+, QP = 0, 0.2, 0
+, REULER = 2.498091545, 1.570796327, 3.141592654
+!
+!                          adams_view_name='CYLINDER_1'
+GRAPHICS/1
+, CYLINDER
+, CM = 1
+, LENGTH = 0.2
+, RADIUS = 0.025
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_2'
+PART/2
+, MASS = 5.983292063
+, CM = 8
+, IP = 0.0326237442, 0.0326237442, 0.0029215293
+!
+!                           adams_view_name='MARKER_2'
+MARKER/2
+, PART = 2
+, QP = 0, 0.2, 0
+, REULER = 2.498091545, 1.570796327, 3.141592654
+!
+!                           adams_view_name='MARKER_5'
+MARKER/5
+, PART = 2
+, QP = 0, 0.2, 0
+, REULER = 2.498091545, 1.570796327, 3.141592654
+!
+!                           adams_view_name='MARKER_6'
+MARKER/6
+, PART = 2
+, QP = 0.15, 0.4, 0
+!
+!                              adams_view_name='cm'
+MARKER/8
+, PART = 2
+, QP = 0.075, 0.3, -6.379264959E-013
+, REULER = 5.639684198, 1.570796327, 0
+!
+!                          adams_view_name='MARKER_10'
+MARKER/10
+, PART = 2
+, QP = 0, 0.2, 0
+, REULER = 2.498091545, 1.570796327, 3.141592654
+!
+!                          adams_view_name='MARKER_11'
+MARKER/11
+, PART = 2
+, QP = 0, 0.2, 0
+, REULER = 2.498091545, 1.570796327, 3.141592654
+!
+!                          adams_view_name='CYLINDER_2'
+GRAPHICS/2
+, CYLINDER
+, CM = 2
+, LENGTH = 0.25
+, RADIUS = 0.03125
+!
+!------------------------------------ Part -------------------------------------
+!
+!                            adams_view_name='PART_3'
+PART/3
+, MASS = 21.14327118
+, CM = 9
+, IP = 0.2674568744, 0.2674568744, 0.0239513619
+!
+!                           adams_view_name='MARKER_3'
+MARKER/3
+, PART = 3
+, QP = 0.15, 0.4, 0
+, REULER = 1.165904541, 1.570796327, 0
+!
+!                           adams_view_name='MARKER_7'
+MARKER/7
+, PART = 3
+, QP = 0.15, 0.4, 0
+!
+!                              adams_view_name='cm'
+MARKER/9
+, PART = 3
+, QP = 0.325, 0.325, -9.716606902E-013
+, REULER = 4.307497194, 1.570796327, 1.570796327
+!
+!                          adams_view_name='MARKER_12'
+MARKER/12
+, PART = 3
+, QP = 0.15, 0.4, 0
+!
+!                          adams_view_name='MARKER_13'
+MARKER/13
+, PART = 3
+, QP = 0.15, 0.4, 0
+!
+!                          adams_view_name='CYLINDER_3'
+GRAPHICS/3
+, CYLINDER
+, CM = 3
+, LENGTH = 0.3807886553
+, RADIUS = 0.0475985819
+!
+!------------------------------ DYNAMIC GRAPHICS -------------------------------
+!
+!                   adams_view_name='SFORCE_1_force_graphic_1'
+GRAPHICS/4
+, FORCE
+, ETYPE = SFORCE
+, EID = 1
+, EMARKER = 10
+!
+!                   adams_view_name='SFORCE_2_force_graphic_1'
+GRAPHICS/5
+, FORCE
+, ETYPE = SFORCE
+, EID = 2
+, EMARKER = 12
+!
+!-------------------------------- CONSTRAINTS ----------------------------------
+!
+!                           adams_view_name='JOINT_1'
+JOINT/1
+, REVOLUTE
+, I = 4
+, J = 5
+!
+!                           adams_view_name='JOINT_2'
+JOINT/2
+, REVOLUTE
+, I = 6
+, J = 7
+!
+!----------------------------------- FORCES ------------------------------------
+!
+!                           adams_view_name='SFORCE_1'
+SFORCE/1
+, ROTATIONAL
+, I = 10
+, J = 11
+, ACTIONONLY
+, FUNCTION = 1
+!
+!                           adams_view_name='SFORCE_2'
+SFORCE/2
+, ROTATIONAL
+, I = 12
+, J = 13
+, ACTIONONLY
+, FUNCTION = 2.0
+!
+!------------------------- GRAVITATIONAL ACCELERATION --------------------------
+!
+ACCGRAV/
+, JGRAV = -9.80665
+!
+!----------------------------- ANALYSIS SETTINGS -------------------------------
+!
+OUTPUT/
+, REQSAVE
+, GRSAVE
+!
+RESULTS/
+, XRF
+!
+END

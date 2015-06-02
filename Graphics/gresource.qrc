@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/GShaders">
+        <file>gvertexshader.vert</file>
+        <file>gfragmentshader.frag</file>
+    </qresource>
+</RCC>
